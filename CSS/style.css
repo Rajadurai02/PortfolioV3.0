@@ -1,0 +1,63 @@
+:root{
+    --conflower-blue:#5ea1fc;
+    --royal-blue:#2469ca;
+}
+
+.header-container{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo-container{
+    padding:10px;
+}
+
+.logo-text{
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.logo-r{
+    background-color: var(--conflower-blue);
+}
+
+.logo-s{
+    background-color: var(--royal-blue);
+    margin-left:-10px;
+}
+
+.nav-container{
+    padding:10px;    
+}
+
+.nav-items-container{
+    display: flex;
+    align-items: center;
+    margin-block: unset;
+    margin-inline: unset;
+    padding-inline: unset;
+}
+
+.nav-item{
+    display:inline-block;
+    color:black;
+    padding:10px 20px;
+}
+
+.nav-item:hover{
+    color:var(--conflower-blue); 
+   border-bottom: 2px solid var(--royal-blue);
+}
+
+.nav-link{
+    color:inherit;
+    text-decoration: none;
+}
+
+.nav-items-container .active{
+   color:var(--conflower-blue); 
+   border-bottom: 2px solid var(--royal-blue);
+}

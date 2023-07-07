@@ -61,3 +61,39 @@
    color:var(--conflower-blue); 
    border-bottom: 2px solid var(--royal-blue);
 }
+
+.home-container{
+    margin:20px;
+    height: 300px;
+    background-color: beige;
+}
+.home-content{
+    display:flex;
+    align-items: center;
+}
+
+.title-content{
+    width:50%;
+}
+.image-content{
+    position:relative;
+}
+.image-content img{
+    width:200px;
+    height:250px;
+}
+.common-box{
+    width:200px;
+    height:250px;
+    position:absolute;
+}
+.blue-box{
+    background-color: var(--conflower-blue);
+    top: 0px;
+    left: 90px;
+}
+.dark-blue-box{
+    background-color: var(--royal-blue);
+    top: 30px;
+    left: 130px;
+}

@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="CSS/bootstrap-icons.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="JS/Index.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -49,12 +51,12 @@
                   <p class="title-bio">Hi there! I'm  a passionate web developer with great experience in creating dynamic and user-friendly websites. I have a strong background in front-end and back-end development, specializing in HTML, CSS, JavaScript and .NET Technologies, and I'm always eager to learn and adapt to new technologies.</p>
                 </div>
                 <div class="btn-area">
-                  <button class="common-btn hireMe-btn" id="hire-me-btn">
+                  <a class="common-btn hireMe-btn" id="hire-me-btn">
                     HIRE ME <i class="bi-arrow-right"></i>
-                  </button>
-                  <button class="common-btn download-cv-btn" id="download-cv-btn">
+                  </a>
+                  <a class="common-btn download-cv-btn" id="download-cv-btn" href="PDF/Rajadurai_Sermaraj_Resume.pptx" download="Resume_Rajadurai_Sermaraj">
                     DOWNLOAD CV <i class="bi-cloud-download"></i>
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="image-content">
@@ -64,17 +66,87 @@
             </div>
             <div class="Info-content">
               <div class="Info-content-container">                
-                <div class="Personal-Info Info-Cards"></div>
-                <div class="Experiance-Awards Info-Cards"></div>
-                <div class="Education-Info Info-Cards"></div>
+                <div class="Personal-Info Info-Cards active">
+                  <div class="info-icon-container">
+                    <i class=" bi-person"></i>                    
+                  </div>
+                  <div class="info-content-container">
+                    <h4 class="info-title">Personal Info</h4>
+                    <p class="info-detail"><i class="bi-person-fill"></i>Rajadurai Sermaraj</p>
+                    <p class="info-detail"><i class="bi-phone-fill"></i>+91 8608731263</p>
+                    <p class="info-detail"><i class="bi-envelope-fill"></i>rajadurai2472000@gmail.com</p>
+                    <p class="info-detail"><i class="bi-github"></i>Rajadurai02</p>
+                  </div>
+                </div>
+                <div class="Experiance-Awards Info-Cards">
+                  <div class="info-icon-container">
+                    <i class="bi-award"></i>                    
+                  </div>
+                  <div class="info-content-container">
+                    <h4 class="info-title">Experiance & Awards</h4>
+                    <p class="info-detail"><i class="bi-calendar-date"></i>2+ Years of Experiance</p>
+                    <p class="info-detail"><i class="bi-globe"></i>Specialization in both Back-End & Front-End</p>
+                    <p class="info-detail"><i class="bi-award-fill"></i>Multitime Award Winner</p>
+                    <p class="info-detail"><i class="bi-person-lines-fill"></i>Good Client Handling Skills</p>
+                  </div>
+                </div>
+                <div class="Education-Info Info-Cards">
+                  <div class="info-icon-container">
+                    <i class=" bi-wallet-fill"></i>                    
+                  </div>
+                  <div class="info-content-container">
+                    <h4 class="info-title">Education</h4>
+                    <p class="info-detail"><i class="bi-stack"></i>Engineering Graduate</p>
+                    <p class="info-detail"><i class="bi-file-code"></i>Specialization in Computer Science</p>
+                    <p class="info-detail"><i class="bi-award-fill"></i>Certifications in Azure</p>
+                    <p class="info-detail"><i class="bi-globe"></i>Web Development Course</p>
+                  </div>
+                </div>
               </div>
-            </div>
+            </div>            
           </div>
         </div>
         <div class="about-container">          
         </div>
         <div class="portfolio-container"></div>
         <div class="contact-container"></div>
+        <div class="footer-content-container">
+          <div class="footer-content">
+            <div class="footer-container">
+              <div class="footer-icon-section">
+                <a class="footer-icons" href="#" target="_blank">
+                  <i class="bi-twitter"></i>
+                </a>
+                <a class="footer-icons" href="#" target="_blank">
+                  <i class="bi-linkedin"></i>
+                </a>
+                <a class="footer-icons" href="#" target="_blank">
+                  <i class="bi-facebook"></i>
+                </a>
+                <a class="footer-icons" href="#" target="_blank">
+                  <i class="bi-instagram"></i>
+                </a>
+                <a class="footer-icons" href="#" target="_blank">
+                  <i class="bi-google"></i>
+                </a>
+                <a class="footer-icons" href="#" target="_blank">
+                  <i class="bi-github"></i>
+                </a>
+              </div>
+              <div class="footer-logo-section">
+                <div class="logo-container">
+                  <div class="logo">
+                      <span class="logo-r logo-text">R</span>
+                      <span class="logo-s logo-text">S</span>
+                  </div>
+              </div>
+              </div>
+              <div class="footer-text-section">
+                <p class="copy-right-text">&#169; Rajadurai Portfolio. All Rights Reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 </body>
 

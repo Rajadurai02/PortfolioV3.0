@@ -14,13 +14,18 @@ body {
 .main-container {
     min-height: 100vh;
     width: 100%;
+    margin-top:-10px;
 }
 
 .header-container {
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    width:100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 0px;
+    margin: 0px;
     padding: 0px 10px;
     box-shadow: 1px 5px 10px rgba(94, 161, 252, 0.2);
 }
@@ -44,10 +49,6 @@ body {
     margin-left: -10px;
 }
 
-.nav-container {
-    padding: 10px;
-}
-
 .nav-items-container {
     display: flex;
     align-items: center;
@@ -59,7 +60,7 @@ body {
 .nav-item {
     display: inline-block;
     color: black;
-    padding: 10px 20px;
+    padding: 20px;
 }
 
 .nav-item:hover {
@@ -90,6 +91,10 @@ body {
     padding: 0px 10px;
 }
 
+.home-content, .Info-content, .contact-content,.about-content{
+    min-height:80vh;
+}
+
 .title-content {
     width: 50%;
 }
@@ -99,7 +104,7 @@ body {
 }
 
 .image-content img {
-    width: auto;
+    width: 30em;
     height: auto;
 }
 
@@ -120,6 +125,10 @@ body {
     line-height: 1.8;
 }
 
+.btn-area{
+    margin-right:10px;
+}
+
 .common-btn {
     margin-right: 20px;
     border-radius: 4px;
@@ -129,6 +138,7 @@ body {
     cursor: pointer;
     padding: 12px;
     text-decoration: none;
+    display:inline-block;
 }
 
 .common-btn i {
@@ -150,7 +160,8 @@ body {
 }
 
 .Info-content {
-    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
 }
 
 .Info-content-container {
@@ -205,6 +216,7 @@ body {
 
 .info-detail {
     color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
 }
 
 .info-detail i {
@@ -309,3 +321,176 @@ body {
 .contact-btn i{
     margin-left:100px;
 }
+
+.about-container{
+    margin:0px 10px;
+    padding:10px 0px;
+}
+
+.about-content{
+    width:100%;
+    display:flex;
+    align-items: center;
+}
+
+.about-timeline-container{
+    width:40%;
+}
+
+.about-content-container{
+    width:60%;
+}
+
+.about-text{
+    color:rgba(0, 0, 0, 0.5);
+    margin: 10px 0px;
+}
+
+.about-title{
+    color:var(--royal-blue);
+    margin:10px 0px;
+}
+
+.about-short{
+    color:rgba(1, 1, 1, 0.4);
+    line-height: 1.8;
+    margin:10px 0px;
+}
+
+.about-box{
+    padding: 10px 20px;
+    background-color: rgba(94, 161, 252, 0.2);
+    border-radius: 10px;
+    margin-bottom:20px;
+}
+
+.inverted{
+    background-color: rgba(94, 161, 252, 0.4);
+}
+
+.about-box h3{
+    color:var(--royal-blue);
+    margin:10px 0px;
+}
+.about-box i{
+    margin-right:10px;
+}
+.about-box p{
+    color:rgba(1, 1, 1, 0.4);
+    line-height: 1.8;
+    margin: 10px 0px 10px 30px;
+}
+
+/* Timeline Container */
+.timeline {
+    background: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Card container */
+  .card {
+    position: relative;
+    max-width: 400px;
+  }
+  
+  /* setting padding based on even or odd */
+  .card:nth-child(odd) {
+    padding: 30px 0 30px 30px;
+  }
+  .card:nth-child(even) {
+    padding: 30px 30px 30px 0;
+  }
+  /* Global ::before */
+  .card::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    border: solid var(--royal-blue);
+  }
+  
+  /* Setting the border of top, bottom, left */
+  .card:nth-child(odd)::before {
+    left: 0px;
+    top: -4.5px;
+    bottom: -4.5px;
+    border-width: 5px 0 5px 5px;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  /* Setting the top and bottom to "-5px" because earlier it was out of a pixel in mobile devices */
+  @media only screen and (max-width: 400px) {
+    .card:nth-child(odd)::before {
+      top: -5px;
+      bottom: -5px;
+    }
+  }
+  
+  /* Setting the border of top, bottom, right */
+  .card:nth-child(even)::before {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-width: 5px 5px 5px 0;
+    border-radius: 0 50px 50px 0;
+  }
+  
+  /* Removing the border if it is the first card */
+  .card:first-child::before {
+    border-top: 0;
+    border-top-left-radius: 0;
+  }
+  
+  /* Removing the border if it is the last card  and it's odd */
+  .card:last-child:nth-child(odd)::before {
+    border-bottom: 0;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Removing the border if it is the last card  and it's even */
+  .card:last-child:nth-child(even)::before {
+    border-bottom: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  /* Information about the timeline */
+  .info {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(94, 161, 252, 0.2);
+    color: gray;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  /* Title of the card */
+  .title {
+    color: var(--royal-blue);
+    position: relative;
+  }
+  
+  /* Timeline dot  */
+  .title::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 999px;
+    border: 3px solid var(--conflower-blue);
+  }
+  
+  /* text right if the card is even  */
+  .card:nth-child(even) > .info > .title {
+    text-align: right;
+  }
+  
+  /* setting dot to the left if the card is odd */
+  .card:nth-child(odd) > .info > .title::before {
+    left: -45px;
+  }
+  
+  /* setting dot to the right if the card is odd */
+  .card:nth-child(even) > .info > .title::before {
+    right: -45px;
+  }

@@ -400,6 +400,7 @@ body {
     display:flex;
     align-items:center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skill-img-container figure img{

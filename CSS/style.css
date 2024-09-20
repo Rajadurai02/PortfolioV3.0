@@ -80,7 +80,7 @@ body {
 
 .home-container {
     margin: 10px 0px;
-    padding: 0px 10px;
+    padding: 60px 10px 0px;
     background-color: #fff;
 }
 
@@ -238,6 +238,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .footer-icons {
@@ -250,10 +251,6 @@ body {
 .footer-icons:hover {
     color: var(--conflower-blue);
     font-size: 18px;
-}
-
-.copy-right-text {
-    color: var(--royal-blue);
 }
 
 .contact-container{
@@ -314,30 +311,22 @@ body {
     justify-content: center;
 }
 
-.contact-btn{
-    width:200px;
-}
-
-.contact-btn i{
-    margin-left:100px;
-}
-
 .about-container{
     margin:0px 10px;
     padding:10px 0px;
 }
 
-.about-content{
+.about-content, .achievement-container{
     width:100%;
     display:flex;
     align-items: center;
 }
 
-.about-timeline-container{
+.about-timeline-container, .achivement-img-container{
     width:40%;
 }
 
-.about-content-container{
+.about-content-container, .achivement-content-container{
     width:60%;
 }
 
@@ -386,35 +375,125 @@ body {
     padding:10px 0px;
 }
 
-.tech-skill-box{
-    min-height:400px;    
-    padding:10px;
-}
 .skill-title{
-    margin:10px;
-    text-align: center;
-    padding:10px 10px 0px 10px;
+    margin: 0px;
+    color: var(--royal-blue);
 }
-.skill-img-container{
+.skill-container{
     width:100%;
     display:flex;
     align-items:center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
-}
-
-.skill-img-container figure img{
-    width:60px;
-    mix-blend-mode: multiply;
+    margin: 20px 0px;
+    row-gap: 20px;
 }
 
 .skill-box{
-    width:98%;
-    background-color:rgba(94, 161, 252, 0.2) ;
-    border-radius:20px;
+    width:98%;    
+    padding: 10px;
 }
 
-.skill-box figcaption{
+.skill-tag{
+    font-size: 16px;
+    background-color: lightblue;
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 6px;
+    color: #fff;
+}
+
+.skill-tag.html-tag{
+    background-color: #E34F26;
+}
+
+.skill-tag.css-tag{
+    background-color: #1572B6;
+}
+
+.skill-tag.js-tag{
+    background-color: #F7DF1E;
+}
+
+.skill-tag.jquery-tag{
+    background-color: #0769AD;
+}
+
+.skill-tag.bootstrap-tag{
+    background-color: #7952B3;
+}
+
+.skill-tag.angular-tag{
+    background-color: #DD0031;
+}
+
+.skill-tag.kendo-tag{
+    background-color: #5BB12F;
+}
+
+.skill-tag.csharp-tag{
+    background-color: #178600 ;
+}
+
+.skill-tag.sql-tag{
+    background-color: #CC2927;
+}
+
+.skill-tag.core-tag{
+    background-color: #00A2E1;
+}
+
+.skill-tag.ef-tag{
+    background-color: #3B8C57;
+}
+
+.skill-tag.api-tag{
+    background-color: #55A1F0;
+}
+
+.skill-tag.mvc-tag{
+    background-color: #9B2A2A;
+}
+
+.skill-tag.git-tag{
+    background-color: #F05033;
+}
+
+.skill-tag.devops-tag{
+    background-color: #0078D4;
+}
+
+.achivement-img-container img{
+    width: 100%;
+}
+
+.certificate-card{
+    width: 220px; 
+    display: flex;
+    flex-direction: column;  
+    align-items: center;     
+    border: 1px solid var(--conflower-blue);
+    height: 200px;
+    justify-content: center;
+    row-gap: 15px;
+    border-radius: 20px;    
+}
+
+.certificate-card .certificate-img{
+    width: 100px; 
+}
+
+.certficate-text{
     text-align: center;
+    color: var(--royal-blue)
+}
+
+.certificate-btn{
+    width: 80px;
+    background-color: var(--royal-blue);
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
